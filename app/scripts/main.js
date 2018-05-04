@@ -91,10 +91,10 @@ function my_proxy (func, obj) {
         delta -= diffminutes * 60;
         var diffseconds = Math.floor(delta % 60);  
 
-        var days = document.querySelector("#days");
-        var hours = document.querySelector("#hours");
-        var mins = document.querySelector("#mins");
-        var secs = document.querySelector("#secs");
+        var days = document.querySelector('#days');
+        var hours = document.querySelector('#hours');
+        var mins = document.querySelector('#mins');
+        var secs = document.querySelector('#secs');
 
         days.innerHTML = diffDays;
         hours.innerHTML = diffhours;
