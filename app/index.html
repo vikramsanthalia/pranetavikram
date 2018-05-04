@@ -7,6 +7,7 @@
     <title>pranetavikram</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico?v=2' />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -15,6 +16,7 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -24,11 +26,35 @@
     <!--  -->
     <div class="intro section" id="intro">
       <canvas id="demo-canvas"></canvas>
+      <div class="container">
+        <img class="heart" src="/images/hearth_center.svg" />
+        <div class="wedding">Wedding</div>
+        <div class="wetwo">Vikram &amp; Praneta</div>
+        <div class="date">21. JUNE. 2018</div>
+      </div>
+      <div class="timer">
+        <div class="time">
+          <div class="time-value" id="days">00</div>
+          <div class="time-text">days</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="hours">00</div>
+          <div class="time-text">hours</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="mins">00</div>
+          <div class="time-text">mins</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="secs">00</div>
+          <div class="time-text">secs</div>
+        </div>
+      </div>
     </div>
 
-    <div class="section">
+    <!-- <div class="section">
       <canvas id="canvas"></canvas>
-    </div>
+    </div> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

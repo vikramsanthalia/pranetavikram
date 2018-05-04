@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'EB Garamond', serif;
 }
 
 .section{
@@ -16,4 +17,84 @@ body {
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+.intro:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(127, 127, 127, 0.1);
+	background-image: radial-gradient(rgba(215, 81, 228, 0.6) 33%, transparent 33%);
+	background-size: 2px 2px;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  color: #fff;
+  text-align: center;
+}
+
+.heart{
+  width: 50vw;
+}
+
+.wetwo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  color: #fff;
+  font-size:2vw;
+}
+
+.wedding{
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  color: rgba(215, 81, 228, 1);
+  font-size:2.5vw;
+}
+
+.date{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+.timer{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    font-size: 2vw;
+}
+
+.time{
+  padding: 30px;
+}
+
+.time-text{
+  font-family: 'Dancing Script', cursive;
+  color: rgba(215, 81, 228, 1);
 }
