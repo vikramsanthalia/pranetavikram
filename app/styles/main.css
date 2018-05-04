@@ -13,7 +13,7 @@ body {
 }
 
 .intro{
-  background: url(../images/img.jpeg) no-repeat center center fixed;
+  background: url(../images/img1.jpeg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -29,7 +29,7 @@ body {
 	top: 0;
 	bottom: 0;
 	background: rgba(127, 127, 127, 0.1);
-	background-image: radial-gradient(rgba(215, 81, 228, 0.6) 33%, transparent 33%);
+	background-image: radial-gradient(rgba(215, 81, 228, 0.1) 33%, transparent 33%);
 	background-size: 2px 2px;
 }
 
