@@ -61,7 +61,7 @@ var HeartsBackground = {
   };
 
 function my_proxy (func, obj) {
-    if (typeof(func) != "function") {return;}
+    if (typeof(func) != 'function') {return;}
 
     // If obj is empty or another set another object
     if (!obj) {obj = this;}
@@ -70,7 +70,7 @@ function my_proxy (func, obj) {
 }
 
 
-  document.addEventListener("DOMContentLoaded", function(event) {
+  document.addEventListener('DOMContentLoaded', function(event) {
     HeartsBackground.initialize();
   });
   
