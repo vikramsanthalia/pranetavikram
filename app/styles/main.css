@@ -13,7 +13,7 @@ body {
 }
 
 .intro{
-  background: url(../images/img1.jpeg) no-repeat center center fixed;
+  background: url(../images/img.jpeg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
