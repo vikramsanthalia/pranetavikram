@@ -24,32 +24,38 @@
   <body>
     
     <!--  -->
-    <div class="intro section" id="intro">
-      <canvas id="demo-canvas"></canvas>
-      <div class="container">
-        <img class="heart" src="/images/hearth_center.svg" />
-        <div class="wedding">Wedding</div>
-        <div class="wetwo">Vikram &amp; Praneta</div>
-        <div class="date">21. JUNE. 2018</div>
+    <div class="section">
+      <div class="left">
+          <div class="container">
+              <img class="heart" src="/images/hearth_center.svg" />
+              <div class="wedding">Wedding</div>
+              <div class="wetwo">Vikram &amp; Praneta</div>
+              <div class="date">21. JUNE. 2018</div>
+            </div>
+            <div class="timer">
+              <div class="time">
+                <div class="time-value" id="days">00</div>
+                <div class="time-text">days</div>
+              </div>
+              <div class="time">
+                <div class="time-value" id="hours">00</div>
+                <div class="time-text">hours</div>
+              </div>
+              <div class="time">
+                <div class="time-value" id="mins">00</div>
+                <div class="time-text">mins</div>
+              </div>
+              <div class="time">
+                <div class="time-value" id="secs">00</div>
+                <div class="time-text">secs</div>
+              </div>
+            </div>
       </div>
-      <div class="timer">
-        <div class="time">
-          <div class="time-value" id="days">00</div>
-          <div class="time-text">days</div>
-        </div>
-        <div class="time">
-          <div class="time-value" id="hours">00</div>
-          <div class="time-text">hours</div>
-        </div>
-        <div class="time">
-          <div class="time-value" id="mins">00</div>
-          <div class="time-text">mins</div>
-        </div>
-        <div class="time">
-          <div class="time-value" id="secs">00</div>
-          <div class="time-text">secs</div>
-        </div>
+      <div class="right intro" id="intro">
+          <!-- <canvas id="demo-canvas"></canvas> -->
+          <canvas id="canvas"></canvas>
       </div>
+      
     </div>
 
     <!-- <div class="section">
