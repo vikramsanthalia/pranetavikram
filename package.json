@@ -34,11 +34,10 @@
     "wiredep": "^4.0.0"
   },
   "eslintConfig": {
-       "parserOptions": {
-         "ecmaVersion": 6,
-         "sourceType": "module"
-       },
-  
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
     "rules": {
       "quotes": [
         2,
@@ -47,6 +46,8 @@
     }
   },
   "dependencies": {
+    "compression": "^1.7.2",
+    "connect-gzip-static": "^2.1.1",
     "express": "^4.16.3"
   }
 }

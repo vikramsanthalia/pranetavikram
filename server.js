@@ -3,9 +3,12 @@
 const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 8080;
-const app = express();
+const compression = require('compression');
+const app = express()
+var gzipStatic = require('connect-gzip-static');
+app.use(compression())
 
-app.use(express.static(__dirname + '/dist'));
+app.use(gzipStatic(__dirname + '/dist'));
 
 app.get('*', function (request, response) {
   response.sendFile(path.resolve(__dirname, 'index.html'));
