@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond');
 
+html {
+  touch-action: manipulation;
+}
+
 body {
   background: #B7004E;
   height: 100%;
@@ -7,6 +11,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'EB Garamond', serif;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .section{
@@ -58,6 +77,18 @@ body {
 
 .heart{
   width: 40vw;
+}
+
+.weare{
+  position: absolute;
+  left: 50%;
+  top: -40%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  color: #fff;
+  font-size:1.8vw;
+  font-family: 'Dancing Script', cursive;
 }
 
 .wetwo{
