@@ -18,13 +18,21 @@
     <meta name="msapplication-config" content="/images/browserconfig.xml">
     <meta name="theme-color" content="#B7004E">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-   
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    
+    <!-- endbuild -->
     
   </head>
   <body>
     
+    <!--  -->
     <div class="section">
       <div class="left">
           <div class="container">
@@ -64,7 +72,14 @@
       <canvas id="canvas"></canvas>
     </div> -->
 
-    <script src="scripts/bundle.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
     
+    <!-- build:js scripts/main.js -->
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="scripts/bundle.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
