@@ -1,90 +1,95 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>pranetavikram</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="PranetaVikram">
-    <meta name="application-name" content="PranetaVikram">
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="msapplication-config" content="/images/browserconfig.xml">
-    <meta name="theme-color" content="#B7004E">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pranetavikram</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="PranetaVikram">
+  <meta name="application-name" content="PranetaVikram">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta name="theme-color" content="#B7004E">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <!-- endbuild -->
-    
-  </head>
-  <body>
-    
-    <!--  -->
-    <div class="section">
-      <div class="left">
-          <div class="container">
-              <div class="weare">WE ARE GETTING MARRIED!</div>
-              <img class="heart" src="/images/hearth_center.svg" />
-              <!-- <div class="wedding">Wedding</div> -->
-              <img class="wedding" src="/images/mstile-150x150.png" />
-              <div class="wetwo">Vikram &amp; Praneta</div>
-              <div class="date">21. JUNE. 2018</div>
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-              <div class="timer">
-                <div class="time">
-                  <div class="time-value" id="days">00</div>
-                  <div class="time-text">days</div>
-                </div>
-                <div class="time">
-                  <div class="time-value" id="hours">00</div>
-                  <div class="time-text">hours</div>
-                </div>
-                <div class="time">
-                  <div class="time-value" id="mins">00</div>
-                  <div class="time-text">mins</div>
-                </div>
-                <div class="time">
-                  <div class="time-value" id="secs">00</div>
-                  <div class="time-text">secs</div>
-                </div>
-              </div>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
 
-              
-            </div>
+  <!-- endbuild -->
+</head>
+
+<body class="body start">
+  <!--  -->
+  <div class="left">
+    <div class="container">
+      <div class="guest">Dear Praneta&nbsp;,</div>
+      <div class="weare">We invite you to our wedding</div>
+      <img class="heart" src="/images/hearth_center.svg" />
+      <img class="wedding" src="/images/mstile-150x150.png" />
+      <div class="wetwo">Vikram &amp; Praneta</div>
+      <div class="date">21. JUNE. 2018</div>
+
+      <div class="timer">
+        <div class="time">
+          <div class="time-value" id="days">00</div>
+          <div class="time-text">days</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="hours">00</div>
+          <div class="time-text">hours</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="mins">00</div>
+          <div class="time-text">mins</div>
+        </div>
+        <div class="time">
+          <div class="time-value" id="secs">00</div>
+          <div class="time-text">secs</div>
+        </div>
       </div>
-      <div class="right intro" id="intro">
-          <!-- <canvas id="demo-canvas"></canvas> -->
-          <canvas id="canvas"></canvas>
-      </div>
-      
+
+
     </div>
-
-    <!-- <div class="section">
+  </div>
+  <div class="right">
+    <!-- <canvas id="demo-canvas"></canvas> -->
+    <div class="section intro">
       <canvas id="canvas"></canvas>
-    </div> -->
+      <div class="arrow bounce">
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <!-- <script src="scripts/main.js"></script> -->
-    <script src="scripts/bundle.js"></script>
-    <!-- endbuild -->
-  </body>
+      </div>
+    </div>
+    <div class="section">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <!-- <script src="scripts/main.js"></script> -->
+  <script src="scripts/bundle.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>

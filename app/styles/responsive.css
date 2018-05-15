@@ -1,134 +1,151 @@
+@media only screen and (min-width: 240px) and (max-width: 639px) {
+  .right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    display: block;
+  }
 
-@media only screen and (min-width : 240px) and (max-width : 639px) {
+  .left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    height: 100%;
 
-    .right{
-        position: relative;
-        flex:1;
-    }
+    background: rgba(255, 0, 132, 0.1); /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(
+      to right,
+      rgba(51, 0, 27, 0.1),
+      rgba(255, 0, 132, 0.1)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+      to right,
+      rgba(51, 0, 27, 0.1),
+      rgba(255, 0, 132, 0.1)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all ease-in 0.2s;
+  }
 
-    .left{
-        position: relative;
-        flex:0;
-    }
+  .start .left {
+    position: fixed;
+    background: rgba(255, 0, 132, 1); /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(
+      to right,
+      rgba(51, 0, 27, 1),
+      rgba(255, 0, 132, 1)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+      to right,
+      rgba(51, 0, 27, 1),
+      rgba(255, 0, 132, 1)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 
-    .heart{
-        width:96vw;
-    }
+  .start .right {
+    display: none;
+  }
 
-    .container{
-        transform: translate(2%, -50%);
-    }
+  .heart {
+    width: 96vw;
+  }
 
-    .wedding{
-      width:  20vw;
-    }
+  .container {
+    transform: translate(-50%, -40%);
+  }
 
-    .weare {
-        font-weight: bold;
-        font-size:6vw;
-        color: #d751e4;
-    }
+  .start .container {
+    transform: translate(-50%, -50%);
+  }
 
-    .wetwo{
-        font-size: 4.5vw;
-        color: rgba(215, 81, 228, 1);
-    }
+  .wedding {
+    width: 20vw;
+  }
 
-    .date{
-        font-size: 3vw;
-        color: rgba(215, 81, 228, 1);
-    }
+  .weare {
+    font-weight: bold;
+    font-size: 6vw;
+    color: #d751e4;
+  }
 
-    .timer{
-        font-size: 5vw;
-    }
+  .wetwo {
+    font-size: 4.5vw;
+    color: rgba(215, 81, 228, 1);
+  }
+
+  .date {
+    font-size: 3vw;
+    color: rgba(215, 81, 228, 1);
+  }
+
+  .timer {
+    font-size: 5vw;
+  }
+
+  .guest {
+    font-size: 5vw;
+  }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 640px) and (max-width : 1824px) {
-    
-    .right{
-        position: relative;
-        flex:1;
-        background-position: center;
-    }
+@media only screen and (min-width: 640px) and (max-width: 1824px) {
+  .right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
 
-    .left{
-        position: relative;
-        flex:1;
-    }
+  .left {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    z-index: 99999;
+    transition: all ease-in 0.2s;
+  }
 
-    .heart{
-        width:40vw;
-    }
+  .start .left {
+    width: 100%;
+  }
 
-    .container{
-        transform: translate(-50%, -50%);
-    }
+  .heart {
+    width: 40vw;
+  }
 
-    .wedding{
-        width:  10vw;
-    }
+  .container {
+    transform: translate(-50%, -50%);
+  }
 
-    .weare {
-        font-weight: bold;
-        font-size:1.8vw;
-    }
+  .wedding {
+    width: 10vw;
+  }
 
-    .wetwo{
-        font-size: 1.8vw;
-    }
+  .guest {
+    font-size: 1.5vw;
+  }
 
+  .weare {
+    font-weight: bold;
+    font-size: 1.8vw;
+  }
 
-    .date{
-        font-size: 1.4vw;
-    }
+  .wetwo {
+    font-size: 1.8vw;
+  }
 
-    .timer{
-        font-size: 2vw;
-    }
-}
+  .date {
+    font-size: 1.4vw;
+  }
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-    font-size: 2.5vh;
-
-    .right{
-        position: relative;
-        flex:1;
-    }
-
-    .left{
-        position: relative;
-        flex:1;
-    }
-
-    .heart{
-        width:40vw;
-    }
-
-    .container{
-        transform: translate(-50%, -50%);
-    }
-
-    .wedding{
-        width:  10vw;
-    }
-
-    .weare {
-        font-weight: bold;
-        font-size:1.8vw;
-    }
-
-    .wetwo{
-        font-size: 1.8vw;
-    }
-
-    .date{
-        font-size: 1.4vw;
-    }
-
-    .timer{
-        font-size: 2vw;
-    }
+  .timer {
+    font-size: 2vw;
+  }
 }
