@@ -22,10 +22,7 @@ export default function() {
                   'blahblahblue' + guestval + 'blahblahblue'
                 );
                 let aTag = document.createElement('a');
-                aTag.setAttribute(
-                  'href',
-                  window.location.host + '?guest=' + encrypted
-                );
+                aTag.setAttribute('href', '?guest=' + encrypted);
                 aTag.setAttribute('target', '_blank');
                 aTag.innerHTML = 'Sharable link';
                 generatedLink.appendChild(aTag);
