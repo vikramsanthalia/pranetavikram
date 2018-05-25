@@ -11,7 +11,7 @@ export default function() {
         height = window.innerHeight;
         target = {x: 0, y: height};
 
-        largeHeader = document.getElementById('intro');
+        largeHeader = document.getElementById('us');
         largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas');

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Praneta weds Vikram</title>
   <meta name="description" content="We are getting married on 21st June 2018. Please accept out invitation and grace the occasion with your presence">
-  <meta property="og:title" content="We invite you to our wedding" />
+  <meta property="og:title" content="Praneta weds Vikram" />
   <meta property="og:url" content="https://pranetavikram.in" />
   <meta property="og:description" content="we invite you to our wedding on 21st June 2018">
   <meta property="og:image" content="/images/apple-touch-icon.png">
@@ -34,7 +34,7 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/responsive.css">
-
+  <link rel="stylesheet" href="styles/aos.css">
   <!-- endbuild -->
 </head>
 
@@ -49,7 +49,7 @@
     <div class="container">
       <div class="guest">Dear Praneta&nbsp;,</div>
       <div class="weare">We invite you to our wedding</div>
-      <img class="heart" src="/images/hearth_center.svg" />
+      <img class="heart" src="/images/hearth_center.svg" data-aos="zoom-in-up" />
       <img class="wedding" src="/images/mstile-150x150.png" />
       <div class="wetwo">Vikram &amp; Praneta</div>
       <div class="date">21. JUNE. 2018</div>
@@ -77,15 +77,47 @@
     </div>
   </div>
   <div class="right">
-    <!-- <canvas id="demo-canvas"></canvas> -->
     <div class="section intro">
       <canvas id="canvas"></canvas>
       <div class="arrow bounce">
 
       </div>
     </div>
+    <div class="section us" id="us">
+      <div class="center-divider">
+        <span class="wedding-couple"></span>
+      </div>
+      <div class=" heading-container row" data-aos="zoom-in-up ">
+        <div class="heading">
+          <span class="heading-text">"The Couple "</span>
+          <img class="heading-image" src="/images/heart.png " />
+        </div>
+      </div>
+      <div class="bride row" data-aos="zoom-in-left ">
+        <div class="column about ">
+          <div class="name ">Praneta Agrawal</div>
+          <div class="position ">Bride</div>
+          <div class="desc ">Hi, Praneta here. I love dancing and travelling. I love buying shoes. </div>
+        </div>
+        <div class="column photo "></div>
+      </div>
+      <div class="groom row" data-aos="zoom-in-right ">
+        <div class="column photo ">
+        </div>
+        <div class="column about ">
+          <div class="name ">Vikram Santhalia</div>
+          <div class="position ">Groom</div>
+          <div class="desc ">
+            Hi, I am Vikram. I am an engineer and I write code for a living. I am a cricketor by blood.
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section">
       <div id="map"></div>
+      <div id="content">
+        Wedding Location - Haryana Bhawan
+      </div>
     </div>
   </div>
 
@@ -97,8 +129,8 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->
-  <!-- <script src="scripts/main.js"></script> -->
-  <script src="scripts/bundle.js"></script>
+  <!-- <script src="scripts/main.js "></script> -->
+  <script src="scripts/bundle.js "></script>
   <!-- endbuild -->
 </body>
 

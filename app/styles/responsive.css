@@ -90,6 +90,11 @@
   .guest {
     font-size: 5vw;
   }
+
+  .section.us {
+    background-size: 55vh 55vh;
+    background-position: bottom;
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -147,5 +152,10 @@
 
   .timer {
     font-size: 2vw;
+  }
+
+  .section.us {
+    background-size: 80vh 80vh;
+    background-position: bottom;
   }
 }

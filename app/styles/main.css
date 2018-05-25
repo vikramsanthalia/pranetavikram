@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond");
-/* @import url('./responsive.css');  */
-/* @import url('./media.css'); */
 
 html {
   touch-action: manipulation;
@@ -50,10 +48,10 @@ body {
     rgba(51, 0, 27, 1),
     rgba(255, 0, 132, 1)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 200% 200%;
-  -webkit-animation: Gradient 8s ease infinite;
-  -moz-animation: Gradient 8s ease infinite;
-  animation: Gradient 8s ease infinite;
+  background-size: 300% 300%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
 
   position: relative;
 }
@@ -98,6 +96,7 @@ body {
   text-transform: capitalize;
   left: 50%;
   top: -70%;
+  font-weight: bold;
   width: 100%;
   transform: translate(-50%, -50%);
   z-index: 10001;
@@ -318,4 +317,205 @@ body {
 
 .inviteConsole.hide {
   opacity: 0;
+}
+
+/* The location pointed to by the popup tip. */
+.popup-tip-anchor {
+  height: 0;
+  position: absolute;
+  /* The max width of the info window. */
+  width: 240px;
+}
+/* The bubble is anchored above the tip. */
+.popup-bubble-anchor {
+  position: absolute;
+  width: 100%;
+  bottom: /* TIP_HEIGHT= */ 8px;
+  left: 0;
+}
+/* Draw the tip. */
+.popup-bubble-anchor::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 0;
+  /* Center the tip horizontally. */
+  transform: translate(-50%, 0);
+  /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0;
+  height: 0;
+  /* The tip is 8px high, and 12px wide. */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: /* TIP_HEIGHT= */ 8px solid white;
+}
+/* The popup bubble itself. */
+.popup-bubble-content {
+  position: absolute;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  top: -45px;
+  left: 0;
+  transform: translate(-50%, -100%);
+  /* Style the info window. */
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  overflow-y: auto;
+  max-height: 60px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.section.us {
+  background-color: #fff;
+  /* background-image: url(../images/bride_groom.png);
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  background-position: center; */
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.heading-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  display: inline;
+  position: relative;
+}
+
+.heading-image {
+  display: block;
+  margin: auto;
+  z-index: 12;
+  height: 12px;
+  background-color: #fff;
+  padding: 0 4px;
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 4vh;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 2px solid #b7004e;
+  padding-bottom: 3px;
+}
+
+.groom {
+  flex: 1;
+}
+
+.bride {
+  flex: 1;
+}
+
+.name {
+  font-size: 3vh;
+}
+
+.bride .photo {
+  background-image: url(../images/bride.png);
+}
+
+.groom .photo {
+  background-image: url(../images/groom.png);
+}
+
+.groom .desc {
+  padding-right: 20px;
+}
+
+.bride .desc {
+  padding-left: 20px;
+}
+
+.bride .about {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.groom .about {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.photo {
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.position {
+  font-size: 3vh;
+  font-family: "Dancing Script", cursive;
+  color: rgba(183, 0, 78, 1);
+  margin: 10px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  padding: 15px;
+}
+
+.center-divider {
+  position: absolute;
+  height: 75%;
+  width: 1px;
+  background: rgba(183, 0, 78, 0.4);
+  left: 50%;
+  top: 16%;
+}
+
+.wedding-couple {
+  position: absolute;
+  background-image: url(../images/wedding-couple.png);
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  left: -20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #b7004e;
+  animation: fontbulger 5s infinite alternate;
+  z-index: 999999999;
+}
+
+@keyframes fontbulger {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
 }
