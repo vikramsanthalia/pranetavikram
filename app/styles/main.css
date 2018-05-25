@@ -504,7 +504,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   border: 1px solid #b7004e;
-  animation: fontbulger 5s infinite alternate;
+  animation: move 4s infinite alternate;
   z-index: 999999999;
 }
 
@@ -517,5 +517,14 @@ body {
   }
   100% {
     top: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 70vh, 0);
   }
 }

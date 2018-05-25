@@ -1,6 +1,6 @@
 import heart from './heart';
 import timer from './timer';
-import map from './mapol';
+import map from './mapool';
 import guest from './guest';
 import aos from './aos';
 //import bubbles from './bubbles';
