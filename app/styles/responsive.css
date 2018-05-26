@@ -95,6 +95,67 @@
     background-size: 55vh 55vh;
     background-position: bottom;
   }
+
+  .bridemaid {
+    width: 100vw;
+  }
+
+  @keyframes wobble1 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    50% {
+      transform: translate3d(100%, 0, 0) scale3d(2.5, 2.5, 2.5);
+      z-index: 200;
+    }
+    75% {
+      transform: translate3d(200%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+  }
+
+  @keyframes wobble2 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(2.5, 2.5, 2.5);
+      z-index: 200;
+    }
+    50% {
+      transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    75% {
+      transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(2.5, 2.5, 2.5);
+      z-index: 200;
+    }
+  }
+
+  @keyframes wobble3 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    50% {
+      transform: translate3d(-200%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    75% {
+      transform: translate3d(-100%, 0, 0) scale3d(2.5, 2.5, 2.5);
+      z-index: 200;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -157,5 +218,66 @@
   .section.us {
     background-size: 80vh 80vh;
     background-position: bottom;
+  }
+
+  .bridemaid {
+    width: 50vw;
+  }
+
+  @keyframes wobble1 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    50% {
+      transform: translate3d(100%, 0, 0) scale3d(2, 2, 2);
+      z-index: 200;
+    }
+    75% {
+      transform: translate3d(200%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+  }
+
+  @keyframes wobble2 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
+      z-index: 200;
+    }
+    50% {
+      transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    75% {
+      transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
+      z-index: 200;
+    }
+  }
+
+  @keyframes wobble3 {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    50% {
+      transform: translate3d(-200%, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
+    75% {
+      transform: translate3d(-100%, 0, 0) scale3d(2, 2, 2);
+      z-index: 200;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+      z-index: 100;
+    }
   }
 }
