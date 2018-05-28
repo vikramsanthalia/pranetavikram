@@ -47,10 +47,6 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-  .start .right {
-    display: none;
-  }
-
   .heart {
     width: 96vw;
   }
@@ -106,7 +102,7 @@
       z-index: 100;
     }
     50% {
-      transform: translate3d(100%, 0, 0) scale3d(2.5, 2.5, 2.5);
+      transform: translate3d(100%, 0, 0) scale3d(2.5, 2.5, 2);
       z-index: 200;
     }
     75% {
@@ -121,7 +117,7 @@
 
   @keyframes wobble2 {
     0% {
-      transform: translate3d(0, 0, 0) scale3d(2.5, 2.5, 2.5);
+      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
       z-index: 200;
     }
     50% {
@@ -133,7 +129,7 @@
       z-index: 100;
     }
     100% {
-      transform: translate3d(0, 0, 0) scale3d(2.5, 2.5, 2.5);
+      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
       z-index: 200;
     }
   }
@@ -148,13 +144,17 @@
       z-index: 100;
     }
     75% {
-      transform: translate3d(-100%, 0, 0) scale3d(2.5, 2.5, 2.5);
+      transform: translate3d(-100%, 0, 0) scale3d(2, 2, 2);
       z-index: 200;
     }
     100% {
       transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
       z-index: 100;
     }
+  }
+
+  .carousel-cell {
+    width: 40%;
   }
 }
 
@@ -279,5 +279,9 @@
       transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
       z-index: 100;
     }
+  }
+
+  .carousel-cell {
+    width: 30%;
   }
 }

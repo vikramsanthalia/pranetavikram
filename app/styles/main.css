@@ -313,10 +313,12 @@ body {
 
 .inviteConsole.show {
   opacity: 1;
+  display: block;
 }
 
 .inviteConsole.hide {
   opacity: 0;
+  display: none;
 }
 
 /* The location pointed to by the popup tip. */
@@ -595,7 +597,7 @@ body {
   background-color: #fff;
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: 60vh;
   flex-direction: column;
 }
 
@@ -659,4 +661,35 @@ body {
 
 .bridemaid .column:nth-child(3) .image {
   background-image: url(../images/amlan.png);
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  height: 50vh;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ed2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 50vh;
+  font-size: 80px;
+  color: white;
+}
+
+.section.gifts {
+  flex-direction: column;
+  height: 50vh;
 }
