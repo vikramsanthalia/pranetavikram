@@ -96,65 +96,25 @@
     width: 100vw;
   }
 
-  @keyframes wobble1 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    50% {
-      transform: translate3d(100%, 0, 0) scale3d(2.5, 2.5, 2);
-      z-index: 200;
-    }
-    75% {
-      transform: translate3d(200%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-  }
-
-  @keyframes wobble2 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-    50% {
-      transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    75% {
-      transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-  }
-
-  @keyframes wobble3 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    50% {
-      transform: translate3d(-200%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    75% {
-      transform: translate3d(-100%, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
+  .groomsmen .man {
+    width: 75vw;
   }
 
   .carousel-cell {
-    width: 40%;
+    width: 70%;
+  }
+
+  .groomsmen .man .name {
+    font-size: 3.5vh;
+  }
+
+  .groomsmen .man .image {
+    height: 12vh;
+    width: 12vh;
+  }
+
+  .groomsmen .man .text {
+    font-size: 2.5vh;
   }
 }
 
@@ -224,64 +184,24 @@
     width: 50vw;
   }
 
-  @keyframes wobble1 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    50% {
-      transform: translate3d(100%, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-    75% {
-      transform: translate3d(200%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-  }
-
-  @keyframes wobble2 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-    50% {
-      transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    75% {
-      transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-  }
-
-  @keyframes wobble3 {
-    0% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    50% {
-      transform: translate3d(-200%, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
-    75% {
-      transform: translate3d(-100%, 0, 0) scale3d(2, 2, 2);
-      z-index: 200;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      z-index: 100;
-    }
+  .groomsmen .man {
+    width: 25vw;
   }
 
   .carousel-cell {
     width: 30%;
+  }
+
+  .groomsmen .man .name {
+    font-size: 5vh;
+  }
+
+  .groomsmen .man .image {
+    height: 15vh;
+    width: 15vh;
+  }
+
+  .groomsmen .man .text {
+    font-size: 3.5vh;
   }
 }

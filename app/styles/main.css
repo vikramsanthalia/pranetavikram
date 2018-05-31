@@ -597,70 +597,103 @@ body {
   background-color: #fff;
   overflow: hidden;
   position: relative;
-  height: 60vh;
+  height: 110vh;
   flex-direction: column;
 }
 
-.bridemaid {
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-  margin-top: 20vh;
-}
-
-.bridemaid .column {
-  text-align: center;
-  height: 100%;
-  background-color: #fff;
-  margin: 5px;
-  border: 1px solid #e35b81;
-  border-radius: 5px;
-}
-
-.bridemaid .column .name {
+.groomsTitle {
+  margin: 10px 25px;
   color: #b7004e;
   font-family: "Dancing Script", cursive;
-  font-size: 2vh;
 }
 
-.bridemaid .column .image {
+.groomsmen {
+  position: relative;
+}
+
+.bridegroomf {
+  height: 40vh;
+}
+
+.groomsmen .man {
+  text-align: center;
+  height: 100%;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  height: 40vh;
+  transition: opacity ease-in 0.2ms;
+  opacity: 0;
+}
+
+.groomsmen .man.bm {
+  right: 20px;
+}
+
+.groomsmen .man.gm {
+  left: 20px;
+}
+
+.groomsmen .man .name {
+  color: #b7004e;
+  font-size: 5vh;
+}
+
+.groomsmen .man .image {
   border: 1px solid #e35b81;
   border-radius: 50%;
   background-attachment: unset;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 10vh;
-  width: 10vh;
+  height: 15vh;
+  width: 15vh;
   margin: 0 auto;
 }
 
-.bridemaid .column .text {
-  font-size: 1.5vh;
+.groomsmen .man .text {
+  font-size: 3.5vh;
+  font-family: "Dancing Script", cursive;
 }
 
-.bridemaid .column:nth-child(1) {
-  animation: wobble1 8s infinite;
+.groomsmen .man.selected {
+  animation: opacimationShow 4s linear;
 }
 
-.bridemaid .column:nth-child(1) .image {
+.groomsmen .man.unselected {
+  animation: opacimationHide 1s linear;
+}
+
+.groomsmen .man:nth-child(1) .image {
   background-image: url(../images/tanay.png);
 }
 
-.bridemaid .column:nth-child(2) {
-  animation: wobble2 8s infinite;
-}
-
-.bridemaid .column:nth-child(2) .image {
+.groomsmen .man:nth-child(2) .image {
   background-image: url(../images/mayank.png);
 }
 
-.bridemaid .column:nth-child(3) {
-  animation: wobble3 8s infinite;
+.groomsmen .man:nth-child(3) .image {
+  background-image: url(../images/amlan.png);
 }
 
-.bridemaid .column:nth-child(3) .image {
-  background-image: url(../images/amlan.png);
+@keyframes opacimationShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacimationHide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .carousel {
@@ -668,7 +701,7 @@ body {
 }
 
 .carousel-cell {
-  height: 50vh;
+  height: 40vh;
   margin-right: 10px;
   background: #8c8;
   border-radius: 5px;
@@ -683,7 +716,7 @@ body {
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(carousel-cell);
+  content: "";
   line-height: 50vh;
   font-size: 80px;
   color: white;
@@ -692,4 +725,9 @@ body {
 .section.gifts {
   flex-direction: column;
   height: 50vh;
+}
+
+.bmt {
+  text-align: right;
+  margin-top: 20px;
 }
