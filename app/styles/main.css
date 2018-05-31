@@ -659,7 +659,7 @@ body {
 }
 
 .groomsmen .man.selected {
-  animation: opacimationShow 4s linear;
+  animation: opacimationShow 6s linear;
 }
 
 .groomsmen .man.unselected {

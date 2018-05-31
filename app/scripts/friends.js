@@ -25,13 +25,13 @@ export default function() {
           currentGM = currentGM === grooms.length - 1 ? 0 : currentGM + 1;
 
           that.setClasses(grooms, currentGM);
-        }, 4000);
+        }, 6000);
 
         setInterval(function() {
           currentBM = currentBM === brides.length - 1 ? 0 : currentBM + 1;
 
           that.setClasses(brides, currentBM);
-        }, 3500);
+        }, 5500);
       }
     }
   };
