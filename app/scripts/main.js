@@ -19,6 +19,6 @@ import friends from './friends';
     heart().HeartsBackground.initialize();
     timer().Timer.init();
     friends().Friends.init();
-    //gifts().Gifts.init();
+    gifts().Gifts.init();
   });
 })();
