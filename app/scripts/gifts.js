@@ -147,7 +147,7 @@ function getAndSet() {
     title.classList.add('title');
     let contri = document.createElement('a');
     contri.classList.add('contri');
-    contri.href = `https://api.whatsapp.com/send?phone=9886922457&text=${encodeURI(
+    contri.href = `https://api.whatsapp.com/send?phone=+919886922457&text=${encodeURI(
       'I wanna gift you ' + gift.name
     )}`;
     contri.innerHTML = 'Get in touch!';
