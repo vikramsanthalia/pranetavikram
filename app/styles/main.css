@@ -304,11 +304,11 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   padding: 10px;
   z-index: 999999999;
-  background-color: #b7004e;
+  background-color: #fff;
+  color: #b7004e;
 }
 
 .inviteConsole.show {
@@ -319,6 +319,47 @@ body {
 .inviteConsole.hide {
   opacity: 0;
   display: none;
+}
+
+.inviteConsole textarea {
+  width: 100%;
+  margin: 10px 0;
+  border: 2px solid #efbe70;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inviteConsole .submit {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  background: #eb3a44;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.inviteConsole .wrapped {
+  border: 1px solid #e35b81;
+  padding: 5px;
+  border-radius: 2px;
+  width: 100%;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.guestName,
+.aTag {
+  display: inline-block;
+  margin: 0 5px;
+  text-transform: capitalize;
+  width: 40%;
+  font-size: 2vh;
 }
 
 /* The location pointed to by the popup tip. */
@@ -373,7 +414,7 @@ body {
   background-color: #fff;
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: 105vh;
   flex-direction: column;
 }
 
@@ -395,6 +436,7 @@ body {
   margin: auto;
   z-index: 12;
   height: 12px;
+  margin-top: 2px;
 }
 
 .heading-text {
@@ -402,7 +444,7 @@ body {
   font-size: 4vh;
   font-family: "Dancing Script", cursive;
   border-bottom: 2px solid #b7004e;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 
 .groom {
@@ -426,11 +468,11 @@ body {
 }
 
 .groom .desc {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .bride .desc {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .bride .about {
@@ -477,11 +519,11 @@ body {
 
 .center-divider {
   position: absolute;
-  height: 75%;
+  height: 86%;
   width: 1px;
   background: rgba(183, 0, 78, 0.4);
   left: 50%;
-  top: 16%;
+  top: 12%;
 }
 
 .wedding-couple {
@@ -509,7 +551,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(0, 70vh, 0);
+    transform: translate3d(0, 84vh, 0);
   }
 }
 
@@ -599,6 +641,19 @@ body {
   position: relative;
   height: 110vh;
   flex-direction: column;
+  z-index: 99;
+
+  background: #dd5e89; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f7bb97,
+    #dd5e89
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f7bb97,
+    #dd5e89
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .groomsTitle {
@@ -626,6 +681,36 @@ body {
   height: 40vh;
   transition: opacity ease-in 0.2ms;
   opacity: 0;
+  background: #fff;
+  z-index: 999999;
+}
+
+.special.groomm {
+  width: 25vw;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  height: 40vh;
+  opacity: 1;
+  background: #fff;
+  z-index: 4;
+  left: 20px;
+}
+
+.special.bridem {
+  width: 25vw;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  height: 40vh;
+  opacity: 1;
+  background: #fff;
+  z-index: 4;
+  right: 20px;
 }
 
 .groomsmen .man.bm {
@@ -655,6 +740,7 @@ body {
 
 .groomsmen .man .text {
   font-size: 3.5vh;
+  padding: 10px;
   font-family: "Dancing Script", cursive;
 }
 
@@ -666,16 +752,68 @@ body {
   animation: opacimationHide 1s linear;
 }
 
-.groomsmen .man:nth-child(1) .image {
+.groomsmen .man:nth-child(2) .image {
   background-image: url(../images/tanay.png);
 }
 
-.groomsmen .man:nth-child(2) .image {
+.groomsmen .man:nth-child(3) .image {
   background-image: url(../images/mayank.png);
 }
 
-.groomsmen .man:nth-child(3) .image {
+.groomsmen .man:nth-child(4) .image {
   background-image: url(../images/amlan.png);
+}
+
+.groomsmen .man.bm:nth-child(2) .image {
+  background-image: url(../images/saumya.png);
+}
+
+.groomsmen .man.bm:nth-child(3) .image {
+  background-image: url(../images/isha.png);
+}
+
+.groomsmen .man.bm:nth-child(4) .image {
+  background-image: url(../images/trupthi.png);
+}
+
+.groomsmen .man.bm:nth-child(5) .image {
+  background-image: url(../images/vinni.png);
+}
+
+.groomsmen .man.bm:nth-child(6) .image {
+  background-image: url(../images/rec.png);
+}
+
+.groomsmen .man.bm:nth-child(7) .image {
+  background-image: url(../images/sakshi.png);
+}
+
+.groomsmen .man.bm:nth-child(8) .image {
+  background-image: url(../images/uma.png);
+}
+
+.groomsmen .man.bm:nth-child(9) .image {
+  background-image: url(../images/bajaj.png);
+}
+
+.groomsmen .man.bm:nth-child(10) .image {
+  background-image: url(../images/pallavi.png);
+}
+
+.groomsmen .man.bm:nth-child(11) .image {
+  background-image: url(../images/shivani.png);
+}
+
+.groomsmen .man.bm:nth-child(12) .image {
+  background-image: url(../images/Anusha.png);
+}
+
+.groomsmen .man.bm:nth-child(13) .image {
+  background-image: url(../images/navi.png);
+}
+
+.groomsmen .man.bm:nth-child(14) .image {
+  background-image: url(../images/puchu.png);
 }
 
 @keyframes opacimationShow {
@@ -702,12 +840,13 @@ body {
 }
 
 .carousel {
-  background: #fff;
   padding: 10px 0;
+  z-index: 4;
 }
 
 .carousel-cell {
-  height: 45vh;
+  background: #fff;
+  height: 50vh;
   margin-right: 10px;
   border: 1px solid rgba(227, 91, 129, 0.4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -725,21 +864,34 @@ body {
 }
 
 .carousel-cell .title {
-  margin: 10px 0;
-  color: #b7004e;
+  margin: 15px 0;
+  font-size: 3vh;
+  display: block;
+  color: #de2e44;
   font-family: "Dancing Script", cursive;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2ms ease;
+}
+
+.carousel-cell .title:hover {
+  font-size: 3.2vh;
+  text-decoration: underline;
 }
 
 .carousel-cell .contri {
-  margin: 10px 0;
-  color: #eb3a44;
+  color: #fff;
   cursor: pointer;
+  text-decoration: none;
   display: block;
-}
-
-.carousel-cell.is-selected {
-  border: 1px solid rgba(227, 91, 129, 0.5);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: 2px;
+  margin: 10px auto;
+  width: 70%;
+  background: #b7004e;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 /* cell number */
@@ -754,9 +906,63 @@ body {
 
 .section.gifts {
   flex-direction: column;
-  height: 50vh;
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #753a88,
+    #cc2b5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #753a88,
+    #cc2b5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .flickity-viewport {
   padding: 10px 0;
+}
+
+.carousel .flickity-button {
+  background: rgba(227, 91, 129, 0.2);
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+.gifts-head {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  text-align: center;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+}
+
+.gifts .em-pray {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section.copyright {
+  height: 5vh;
+  background: #94003f;
+  color: #de2e44;
+  font-size: 2vh;
+  text-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section.copyright .em {
+  height: 1em;
 }

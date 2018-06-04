@@ -100,6 +100,11 @@
     width: 75vw;
   }
 
+  .special.groomm,
+  .special.bridem {
+    width: 75vw;
+  }
+
   .carousel-cell {
     width: 70%;
   }
@@ -114,12 +119,24 @@
   }
 
   .groomsmen .man .text {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
+
+  .desc {
+    font-size: 2vh;
+  }
+
+  /* .inviteConsole textarea {
+    width: 93%;
+  } */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 640px) and (max-width: 1824px) {
+  /* .inviteConsole textarea {
+    width: 98%;
+  } */
+
   .right {
     position: absolute;
     top: 0;
@@ -189,7 +206,7 @@
   }
 
   .carousel-cell {
-    width: 30%;
+    width: 45%;
   }
 
   .groomsmen .man .name {
@@ -202,6 +219,10 @@
   }
 
   .groomsmen .man .text {
-    font-size: 3vh;
+    font-size: 2.5vh;
+  }
+
+  .desc {
+    font-size: 2.5vh;
   }
 }

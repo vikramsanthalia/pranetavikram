@@ -21,23 +21,23 @@ app.get('/', function(request, response) {
   response.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.get('/gifts', function(request, response) {
-  fs.readFile('gifts.json', (err, data) => {
-    //console.log('*****server*****', typeof data);
-    if (err) throw err;
-    response.status(200).send(data);
-  });
-});
+// app.get('/gifts', function(request, response) {
+//   fs.readFile('gifts.json', (err, data) => {
+//     //console.log('*****server*****', typeof data);
+//     if (err) throw err;
+//     response.status(200).send(data);
+//   });
+// });
 
-app.post('/gifts', function(request, response) {
-  let data = request.body.data;
-  console.log('*****server*****', typeof data);
-  console.log('*****server*****', data);
-  fs.writeFile('gifts.json', JSON.stringify(data), err => {
-    if (err) throw err;
-    response.status(200).send({ status: '200' });
-  });
-});
+// app.post('/gifts', function(request, response) {
+//   let data = request.body.data;
+//   console.log('*****server*****', typeof data);
+//   console.log('*****server*****', data);
+//   fs.writeFile('gifts.json', JSON.stringify(data), err => {
+//     if (err) throw err;
+//     response.status(200).send({ status: '200' });
+//   });
+// });
 
 app.listen(port);
 console.log('server started on port ' + port);

@@ -5,6 +5,7 @@ import guest from './guest';
 import aos from './aos';
 import gifts from './gifts';
 import friends from './friends';
+import ball from './ball';
 //import bubbles from './bubbles';
 
 (function() {
@@ -20,5 +21,6 @@ import friends from './friends';
     timer().Timer.init();
     friends().Friends.init();
     gifts().Gifts.init();
+    ball().Ball.init();
   });
 })();

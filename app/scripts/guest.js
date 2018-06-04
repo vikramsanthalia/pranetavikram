@@ -5,31 +5,53 @@ export default function() {
     Guest: {
       setGuest: function() {
         let inviteConsole = this.getParameterByName('inviteConsole');
-        if (inviteConsole === '08910891') {
+        if (inviteConsole === 'forP' || inviteConsole === 'forV') {
           let invite = document.querySelector('.inviteConsole');
           invite.classList.remove('hide');
           invite.classList.add('show');
           let guestEle = document.querySelector('.guestName');
           let generatedLink = document.querySelector('.generatedLink');
           let previewText = document.querySelector('.previewText');
+          let submit = document.querySelector('.submit');
+          let retrievedGuests = localStorage.getItem('guestval');
+          if (retrievedGuests) {
+            guestEle.value = retrievedGuests;
+          }
 
-          guestEle.addEventListener(
-            'blur',
+          submit.addEventListener(
+            'click',
             () => {
               let guestval = guestEle && guestEle.value;
               if (guestval) {
-                let encrypted = btoa(
-                  'blahblahblue' + guestval + 'blahblahblue'
-                );
-                let aTag = document.createElement('a');
-                aTag.setAttribute('href', '?guest=' + encrypted);
-                aTag.setAttribute('target', '_blank');
-                aTag.innerHTML = 'Sharable link';
-                generatedLink.appendChild(aTag);
-                previewText.innerHTML = this.getGuestName(
-                  'guest',
-                  window.location.host + '?guest=' + encrypted
-                );
+                localStorage.setItem('guestval', guestval);
+                let guests = guestval.split(',');
+                guests.forEach(guest => {
+                  let encryptedGuestName = btoa(
+                    'blahblahblue' + guest + 'blahblahblue'
+                  );
+                  let container = document.createElement('div');
+                  container.classList.add('wrapped');
+                  let name = document.createElement('div');
+                  name.classList.add('guestName');
+                  let aTag = document.createElement('a');
+                  aTag.classList.add('aTag');
+                  aTag.setAttribute(
+                    'href',
+                    `?guest=${encryptedGuestName}&guestFor=${inviteConsole}`
+                  );
+                  aTag.setAttribute('target', '_blank');
+                  aTag.innerHTML = 'Sharable link';
+                  name.innerHTML = this.getGuestName(
+                    'guest',
+                    `${
+                      window.location.host
+                    }?guest=${encryptedGuestName}&guestFor=${inviteConsole}`
+                  );
+                  container.appendChild(name);
+                  container.appendChild(aTag);
+
+                  previewText.appendChild(container);
+                });
               }
             },
             true
