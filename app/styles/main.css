@@ -996,3 +996,8 @@ body {
 .price {
   font-family: "EB Garamond", serif;
 }
+
+.previewText {
+  overflow-y: scroll;
+  height: 100%;
+}
