@@ -679,8 +679,8 @@ body {
   position: absolute;
   top: 0;
   height: 40vh;
-  transition: opacity ease-in 0.2ms;
   opacity: 0;
+  transition: opacity ease-in 0.5ms;
   background: #fff;
   z-index: 999999;
 }
@@ -745,11 +745,13 @@ body {
 }
 
 .groomsmen .man.selected {
-  animation: opacimationShow 6s linear;
+  opacity: 1;
+  transition: opacity ease-in 0.5ms;
 }
 
 .groomsmen .man.unselected {
-  animation: opacimationHide 1s linear;
+  opacity: 0;
+  transition: opacity ease-in 0.5ms;
 }
 
 .groomsmen .man:nth-child(2) .image {
@@ -875,7 +877,6 @@ body {
 }
 
 .carousel-cell .title:hover {
-  font-size: 3.2vh;
   text-decoration: underline;
 }
 
@@ -892,6 +893,31 @@ body {
   background: #b7004e;
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.carousel-cell .contri:hover {
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-cell .taken {
+  color: #b7004e;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  padding: 6px;
+  font-weight: bold;
+  border-radius: 2px;
+  margin: 10px auto;
+  width: 70%;
+  background: #fff;
+}
+
+.taken .em.em-lock {
+  height: 1em;
+  width: 1em;
+  vertical-align: top;
 }
 
 /* cell number */
@@ -965,4 +991,8 @@ body {
 
 .section.copyright .em {
   height: 1em;
+}
+
+.price {
+  font-family: "EB Garamond", serif;
 }
