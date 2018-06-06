@@ -128,6 +128,13 @@ window.initMap = function() {
     ]
   });
 
+  map.addListener('click', function() {
+    window.open(
+      'https://www.google.com/maps?saddr=My+Location&daddr=Haryana+Bhawan+1st+Main+Rd+Ambalipura+Harlur+Bengaluru+Karnataka+560103',
+      '_blank'
+    );
+  });
+
   popup = new Popup(
     new google.maps.LatLng(12.914848, 77.668975),
     document.getElementById('content')
@@ -154,14 +161,10 @@ window.initMap = function() {
           labelContent: 'ABCD'
         });
         google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(
-            '<div><strong>' +
-              place.name +
-              '</strong><br>' +
-              place.formatted_address +
-              '</div>'
+          window.open(
+            'https://www.google.com/maps?saddr=My+Location&daddr=Haryana+Bhawan+1st+Main+Rd+Ambalipura+Harlur+Bengaluru+Karnataka+560103',
+            '_blank'
           );
-          infowindow.open(map, this);
         });
       }
     }

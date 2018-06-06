@@ -8,13 +8,14 @@ export default function() {
         let medium = document.querySelector('.em-sound');
         let silent = document.querySelector('.em-speaker');
         let control = document.querySelector('.volume-control');
-        let state = 'LOUD';
-        loud.style.display = 'block';
+        let state = 'SILENT';
+        loud.style.display = 'none';
         medium.style.display = 'none';
-        silent.style.display = 'none';
-        audio.volume = 1.0;
+        silent.style.display = 'block';
+        audio.volume = 0.0;
 
         control.addEventListener('click', event => {
+          audio.play();
           switch (state) {
             case 'LOUD':
               loud.style.display = 'none';
@@ -42,7 +43,7 @@ export default function() {
           }
         });
         control.style.display = 'inline-block';
-        audio.play();
+        //audio.play();
       },
 
       init: function() {
