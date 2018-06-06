@@ -23,7 +23,7 @@ import audio from './audio';
       left.classList.remove('start');
       map().Map.init();
       audio().Audio.init();
-    }, 1000);
+    }, 1500);
 
     // let bg = getParameterByName('bg');
     // let family = document.querySelector('.thankyou');
