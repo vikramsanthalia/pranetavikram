@@ -268,6 +268,7 @@ body {
   left: 50%;
   margin-left: -20px;
   width: 30px;
+  z-index: 9;
   height: 30px;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
   background-size: contain;
@@ -587,7 +588,7 @@ body {
 }
 
 .thankyou {
-  background-image: url(../images/bg15.jpg);
+  background-image: url(../images/bg20.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -598,8 +599,18 @@ body {
   overflow: hidden;
   position: relative;
   align-items: center;
-  justify-content: center;
-  height: 40vh;
+  height: 80vh;
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .thankyou:after {
@@ -623,12 +634,12 @@ body {
   color: #fff;
   font-weight: 900;
   font-size: 10vh;
-  z-index: 99999;
+  z-index: 99;
 }
 
 .being_with_us {
   font-size: 4vh;
-  z-index: 99999;
+  z-index: 99;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 2px 10px;
   border-radius: 2px;
@@ -979,7 +990,7 @@ body {
 
 .section.copyright {
   height: 5vh;
-  background: #94003f;
+  background: #512f63;
   color: #de2e44;
   font-size: 2vh;
   text-align: center;
@@ -1004,4 +1015,68 @@ body {
 
 .audio {
   display: inline;
+}
+
+.volume-control {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 999999999999;
+  padding: 5px;
+  display: none;
+}
+
+.volume-control .em {
+  height: 1em;
+}
+
+.family .people {
+  border: 1px solid #e35b81;
+  border-radius: 50%;
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 10vh;
+  width: 10vh;
+  flex: 1;
+  padding: 0px;
+  z-index: 99;
+}
+
+.family {
+  display: flex;
+  margin: 15px;
+}
+
+.family .dad {
+  background-image: url(../images/dad.png);
+}
+
+.family .mom {
+  background-image: url(../images/mom.png);
+  margin-left: 10px;
+}
+
+.family .mummy {
+  background-image: url(../images/mummy.png);
+  margin-left: 30px;
+}
+
+.family .papa {
+  background-image: url(../images/papa.png);
+  margin-left: 10px;
+}
+
+.thankyou-message {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  font-size: 3.5vh;
+  border-radius: 3px;
+  z-index: 99;
+  margin-top: 10px;
+  color: #b7004e;
 }
