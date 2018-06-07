@@ -138,7 +138,7 @@ export default {
       name: 'Laptop Table',
       msgName: 'Laptop Table',
       pdUrl: 'https://www.urbanladder.com/products/nuvolo-laptop-table',
-      isTaken: false,
+      isTaken: true,
       price: '~ 1,999 &#x20b9;',
       value: 1999
     },
