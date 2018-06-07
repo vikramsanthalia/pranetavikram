@@ -104,8 +104,8 @@ export default {
       pdUrl:
         'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
-      price: '~ 12,990 &#x20b9;',
-      value: 12990
+      price: '~ 15,500 &#x20b9;',
+      value: 15500
     },
     {
       id: 9,
@@ -116,8 +116,8 @@ export default {
       pdUrl:
         'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
-      price: '~ 12,990 &#x20b9;',
-      value: 12990
+      price: '~ 15,500 &#x20b9;',
+      value: 15500
     },
     {
       id: 10,
