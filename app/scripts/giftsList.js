@@ -127,7 +127,7 @@ export default {
       msgName: 'Tripod Lamp',
       pdUrl:
         'https://www.pepperfry.com/ethnic-roots-sheesham-wood-and-brass-finish-tripod-floor-lamp-1408494.html',
-      isTaken: false,
+      isTaken: taken,
       price: '~ 11,686 &#x20b9;',
       value: 11686
     },
@@ -198,7 +198,7 @@ export default {
       msgName: 'Passport Covers',
       pdUrl:
         'https://www.themessycorner.in/collections/couple-passport-cover/products/couple-passport-covers-marble-series-1?variant=5229699563557',
-      isTaken: false,
+      isTaken: taken,
       price: '~ 1,100 &#x20b9;',
       value: 1100
     },
