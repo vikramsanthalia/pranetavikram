@@ -67,7 +67,7 @@ export default {
       msgName: 'Shoe Cabinet',
       pdUrl:
         'https://www.pepperfry.com/camel-shoe-cabinet-in-brown-colour-by-exclusive-furniture-1470973.html',
-      isTaken: false,
+      isTaken: true,
       price: '~ 9,500 &#x20b9;',
       value: 9500
     },
