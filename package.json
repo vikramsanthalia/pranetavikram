@@ -57,6 +57,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "tap-listener": "^2.0.0",
-    "unidragger": "^2.3.0"
+    "unidragger": "^2.3.0",
+    "web-animations-js": "^2.3.1"
   }
 }

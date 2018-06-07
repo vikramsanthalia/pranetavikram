@@ -7,7 +7,7 @@ import gifts from './gifts';
 import friends from './friends';
 import ball from './ball';
 import audio from './audio';
-//import bubbles from './bubbles';
+import 'web-animations-js/web-animations.min';
 
 (function() {
   document.addEventListener('DOMContentLoaded', function(event) {
@@ -24,21 +24,5 @@ import audio from './audio';
       map().Map.init();
       audio().Audio.init();
     }, 1500);
-
-    // let bg = getParameterByName('bg');
-    // let family = document.querySelector('.thankyou');
-    // family.style.backgroundImage = `url('images/${bg}.jpg')`;
-    // family.classList.add(bg);
   });
 })();
-
-function getParameterByName(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-    results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return '';
-
-  return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}

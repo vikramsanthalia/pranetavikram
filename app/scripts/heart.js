@@ -44,7 +44,6 @@ export default function() {
       },
       initialize: function() {
         this.canvas = document.querySelector('#canvas');
-
         if (!this.canvas.getContext) return;
 
         this.setCanvasSize();

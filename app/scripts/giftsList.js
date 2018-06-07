@@ -98,10 +98,11 @@ export default {
     {
       id: 8,
       imgUrl:
-        'https://rukminim1.flixcart.com/image/704/704/jerf7gw0/smart-band-tag/a/f/x/fb406bkxl-fitbit-original-imaf3dzyy3zmp52k.jpeg?q=70',
-      name: 'Fitbit Alta - For him',
+        'https://images-na.ssl-images-amazon.com/images/I/810aleRp%2B0L._SX569_.jpg',
+      name: 'Fitbit Charge 2',
       msgName: 'Fitbit',
-      pdUrl: 'https://www.flipkart.com/fitbit-alta/p/itmexgezjsx5wk7m',
+      pdUrl:
+        'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
       price: '~ 12,990 &#x20b9;',
       value: 12990
@@ -109,10 +110,11 @@ export default {
     {
       id: 9,
       imgUrl:
-        'https://rukminim1.flixcart.com/image/704/704/jerf7gw0/smart-band-tag/a/f/x/fb406bkxl-fitbit-original-imaf3dzyy3zmp52k.jpeg?q=70',
-      name: 'Fitbit Alta - For her',
+        'https://images-na.ssl-images-amazon.com/images/I/810aleRp%2B0L._SX569_.jpg',
+      name: 'Fitbit Charge 2 - For her',
       msgName: 'Fitbit',
-      pdUrl: 'https://www.flipkart.com/fitbit-alta/p/itmexgezjsx5wk7m',
+      pdUrl:
+        'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
       price: '~ 12,990 &#x20b9;',
       value: 12990
@@ -195,7 +197,7 @@ export default {
       name: 'Couple Passport Covers ',
       msgName: 'Passport Covers',
       pdUrl:
-        'www.themessycorner.in/collections/couple-passport-cover/products/couple-passport-covers-marble-series-1',
+        'https://www.themessycorner.in/collections/couple-passport-cover/products/couple-passport-covers-marble-series-1?variant=5229699563557',
       isTaken: false,
       price: '~ 1,100 &#x20b9;',
       value: 1100
