@@ -104,7 +104,8 @@ body {
   width: 100%;
   transform: translate(-50%, -50%);
   z-index: 10001;
-  color: rgba(215, 81, 228, 1);
+  color:#fff;
+  font-weight: bold;
   font-family: "Dancing Script", cursive;
 }
 
