@@ -43,7 +43,7 @@ export default {
       msgName: 'Wardrobe',
       pdUrl:
         'https://www.pepperfry.com/okinawa-two-door-wardrobe-in-chocolate-finish-by-mintwud-1620858.html',
-      isTaken: false,
+      isTaken: true,
       price: '~ 9,999 &#x20b9;',
       value: 9999
     },
