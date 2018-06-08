@@ -210,7 +210,7 @@ export default {
       msgName: 'Travel Wallet',
       pdUrl:
         'https://www.themessycorner.in/collections/travel-wallet/products/plain-magenta-travel-wallet',
-      isTaken: false,
+      isTaken: true,
       price: '~ 1,999 &#x20b9;',
       value: 1999
     },
