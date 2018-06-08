@@ -79,7 +79,7 @@ export default {
       msgName: 'Wall Shelf',
       pdUrl:
         'https://www.pepperfry.com/natural-finish-sheesham-wood-wall-shelf-with-2-drawers-by-woodsworth-1666264.html',
-      isTaken: false,
+      isTaken: true,
       price: '~ 2,999 &#x20b9;',
       value: 2999
     },
@@ -186,7 +186,7 @@ export default {
       msgName: 'Car mobile phone charger',
       pdUrl:
         'https://www.amazon.in/Belkin-Certified-Lightning-UNIVERSAL-COMPATIBILITY/dp/B078ZTKQHZ',
-      isTaken: false,
+      isTaken: true,
       price: '~ 1,185 &#x20b9;',
       value: 1185
     },
