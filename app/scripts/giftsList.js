@@ -150,7 +150,7 @@ export default {
       msgName: 'Platform Clock',
       pdUrl:
         'https://www.pepperfry.com/art-of-jodhpur-brown-metal-retro-station-clock-1529614.html',
-      isTaken: false,
+      isTaken: true,
       price: '~ 1,549 &#x20b9;',
       value: 1549
     },
