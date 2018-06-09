@@ -55,7 +55,7 @@ export default {
       msgName: 'Microwave Oven',
       pdUrl:
         'https://www.flipkart.com/samsung-28-l-convection-microwave-oven/p/itmdzm9hxyfv3xxz?pid=MRCDZM93KNYFE6XN&srno=s_1_2&otracker=search&lid=LSTMRCDZM93KNYFE6XNSM5WAH&fm=SEARCH&iid=84816049-02fa-40a2-a558-677cecbfcc9d.MRCDZM93KNYFE6XN.SEARCH&ppt=Search%20Page&ppn=Search&ssid=mtqoyrky8g0000001527762359961&qH=6cfaeb6caa8c734d',
-      isTaken: false,
+      isTaken: true,
       price: '~ 11,490 &#x20b9;',
       value: 11490
     },
