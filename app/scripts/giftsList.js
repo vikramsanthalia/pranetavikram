@@ -240,7 +240,7 @@ export default {
         'https://www.flipkart.com/hitachi-1-ton-3-star-bee-rating-2018-split-ac-white/p/itmf49hzz7bjzhke',
       isTaken: true,
       takenBy:
-        'Vikyath, Preethi, Raghav, Anjali, Anil, Manisha, Anand and Mohan',
+        'Vikyath, Preethi, Raghav, Anjali, Anil, Manisha, Anand, Venkat and Mohan',
       price: '~ 30,910 &#x20b9;',
       value: 30910
     },
