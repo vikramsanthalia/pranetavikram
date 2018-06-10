@@ -32,6 +32,7 @@ export default {
       pdUrl:
         'https://www.flipkart.com/oakley-sports-sunglasses/p/itmf3yh9xcqapddc',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 8,711 &#x20b9;',
       value: 8711
     },
@@ -44,6 +45,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/okinawa-two-door-wardrobe-in-chocolate-finish-by-mintwud-1620858.html',
       isTaken: true,
+      takenBy: 'Jyoti Mausi and Mausaji',
       price: '~ 9,999 &#x20b9;',
       value: 9999
     },
@@ -56,6 +58,7 @@ export default {
       pdUrl:
         'https://www.flipkart.com/samsung-28-l-convection-microwave-oven/p/itmdzm9hxyfv3xxz?pid=MRCDZM93KNYFE6XN&srno=s_1_2&otracker=search&lid=LSTMRCDZM93KNYFE6XNSM5WAH&fm=SEARCH&iid=84816049-02fa-40a2-a558-677cecbfcc9d.MRCDZM93KNYFE6XN.SEARCH&ppt=Search%20Page&ppn=Search&ssid=mtqoyrky8g0000001527762359961&qH=6cfaeb6caa8c734d',
       isTaken: true,
+      takenBy: 'Mayank, Tanay, Akanksha, Ruchi, Jayanti, PD bhaiya and Rajat',
       price: '~ 11,490 &#x20b9;',
       value: 11490
     },
@@ -68,6 +71,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/camel-shoe-cabinet-in-brown-colour-by-exclusive-furniture-1470973.html',
       isTaken: true,
+      takenBy: 'Manu Chachu and Varsha Chachi',
       price: '~ 9,500 &#x20b9;',
       value: 9500
     },
@@ -80,6 +84,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/natural-finish-sheesham-wood-wall-shelf-with-2-drawers-by-woodsworth-1666264.html',
       isTaken: true,
+      takenBy: 'Akash and Caleb',
       price: '~ 2,999 &#x20b9;',
       value: 2999
     },
@@ -92,6 +97,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/presto-multicolour-polyester-tufted-hand-knotted-floral-carpet-1615047.html',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 2,729 &#x20b9;',
       value: 2729
     },
@@ -104,6 +110,7 @@ export default {
       pdUrl:
         'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 15,500 &#x20b9;',
       value: 15500
     },
@@ -116,6 +123,7 @@ export default {
       pdUrl:
         'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 15,500 &#x20b9;',
       value: 15500
     },
@@ -128,6 +136,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/ethnic-roots-sheesham-wood-and-brass-finish-tripod-floor-lamp-1408494.html',
       isTaken: true,
+      takenBy: 'Soumya and Navisha',
       price: '~ 11,686 &#x20b9;',
       value: 11686
     },
@@ -139,6 +148,7 @@ export default {
       msgName: 'Laptop Table',
       pdUrl: 'https://www.urbanladder.com/products/nuvolo-laptop-table',
       isTaken: true,
+      takenBy: 'Isha',
       price: '~ 1,999 &#x20b9;',
       value: 1999
     },
@@ -151,6 +161,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/art-of-jodhpur-brown-metal-retro-station-clock-1529614.html',
       isTaken: true,
+      takenBy: 'Kanishk',
       price: '~ 1,549 &#x20b9;',
       value: 1549
     },
@@ -163,6 +174,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/10-x-3-x-14-inch-white-wooden-key-holder-stand-by-artisans-rose-1631023.html',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 1,537 &#x20b9;',
       value: 1537
     },
@@ -175,6 +187,7 @@ export default {
       pdUrl:
         'https://www.pepperfry.com/brown-engineered-wood-carved-wall-shelf-by-home-sparkle-1613822.html',
       isTaken: false,
+      takenBy: 'Mausa and Mausi',
       price: '~ 1,699 &#x20b9;',
       value: 1699
     },
@@ -187,6 +200,7 @@ export default {
       pdUrl:
         'https://www.amazon.in/Belkin-Certified-Lightning-UNIVERSAL-COMPATIBILITY/dp/B078ZTKQHZ',
       isTaken: true,
+      takenBy: 'Akash and Caleb',
       price: '~ 1,185 &#x20b9;',
       value: 1185
     },
@@ -199,6 +213,7 @@ export default {
       pdUrl:
         'https://www.themessycorner.in/collections/couple-passport-cover/products/couple-passport-covers-marble-series-1?variant=5229699563557',
       isTaken: true,
+      takenBy: 'Manisha',
       price: '~ 1,100 &#x20b9;',
       value: 1100
     },
@@ -211,6 +226,7 @@ export default {
       pdUrl:
         'https://www.themessycorner.in/collections/travel-wallet/products/plain-magenta-travel-wallet',
       isTaken: true,
+      takenBy: 'Rajat',
       price: '~ 1,999 &#x20b9;',
       value: 1999
     },
@@ -223,6 +239,8 @@ export default {
       pdUrl:
         'https://www.flipkart.com/hitachi-1-ton-3-star-bee-rating-2018-split-ac-white/p/itmf49hzz7bjzhke',
       isTaken: true,
+      takenBy:
+        'Vikyath, Preethi, Raghav, Anjali, Anil, Manisha, Anand and Mohan',
       price: '~ 30,910 &#x20b9;',
       value: 30910
     },
@@ -235,6 +253,7 @@ export default {
       pdUrl:
         'https://www.flipkart.com/micromax-106cm-42-inch-full-hd-led-tv/p/itmex867mtehdhrx',
       isTaken: true,
+      takenBy: 'Deepa mausi and Mausaji',
       price: '~ 21,999 &#x20b9;',
       value: 21999
     },
@@ -247,6 +266,7 @@ export default {
       pdUrl:
         'https://www.amazon.com/Bose-soundlink-II-Limited-Bluetooth/dp/B01LZRFI5C/ref=sr_1_7',
       isTaken: true,
+      takenBy: 'Hemanth',
       price: '~ 12,128 &#x20b9;',
       value: 12128
     }

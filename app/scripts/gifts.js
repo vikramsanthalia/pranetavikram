@@ -33,6 +33,12 @@ function getAndSet() {
     price.innerHTML = gift.price;
     price.classList.add('price');
 
+    let takenBy = document.createElement('div');
+    takenBy.innerHTML = `Heartfelt thanks to dear <br><span class="gifted-by">${
+      gift.takenBy
+    }</span><br> for the gift. <i class="em em-sparkling_heart"></i>`;
+    takenBy.classList.add('takenBy');
+
     cell.appendChild(imgLink);
     cell.appendChild(title);
     cell.appendChild(price);
@@ -43,6 +49,7 @@ function getAndSet() {
       contri.innerHTML =
         '<i class="em em-lock"></i>&nbsp;TAKEN&nbsp;<i class="em em-lock"></i>';
       cell.appendChild(contri);
+      cell.appendChild(takenBy);
     } else {
       let contri = document.createElement('a');
       contri.classList.add('contri');

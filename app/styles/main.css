@@ -104,7 +104,7 @@ body {
   width: 100%;
   transform: translate(-50%, -50%);
   z-index: 10001;
-  color:#fff;
+  color: #fff;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
 }
@@ -1092,4 +1092,15 @@ body {
   z-index: 99;
   margin-top: 10px;
   color: #b7004e;
+}
+
+.takenBy {
+  color: #753a88;
+  padding: 0px 10px;
+}
+
+.gifted-by {
+  color: #b7004e;
+  font-weight: 500;
+  font-family: "Dancing Script", cursive;
 }
