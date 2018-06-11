@@ -102,32 +102,6 @@ export default {
       value: 2729
     },
     {
-      id: 8,
-      imgUrl:
-        'https://images-na.ssl-images-amazon.com/images/I/810aleRp%2B0L._SX569_.jpg',
-      name: 'Fitbit Charge 2',
-      msgName: 'Fitbit',
-      pdUrl:
-        'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
-      isTaken: false,
-      takenBy: 'Mausa and Mausi',
-      price: '~ 15,500 &#x20b9;',
-      value: 15500
-    },
-    {
-      id: 9,
-      imgUrl:
-        'https://images-na.ssl-images-amazon.com/images/I/810aleRp%2B0L._SX569_.jpg',
-      name: 'Fitbit Charge 2 - For her',
-      msgName: 'Fitbit',
-      pdUrl:
-        'https://www.amazon.in/Fitbit-Wireless-Activity-Wristband-Gunmetal/dp/B01K9S2A1Y/ref=sr_1_7',
-      isTaken: false,
-      takenBy: 'Mausa and Mausi',
-      price: '~ 15,500 &#x20b9;',
-      value: 15500
-    },
-    {
       id: 10,
       imgUrl:
         'https://ii1.pepperfry.com/media/catalog/product/s/h/494x544/sheesham-wood-and-brass-finish-tripod-floor-lamp-by-ethnic-roots-sheesham-wood-and-brass-finish-trip-vpmrzj.jpg',
