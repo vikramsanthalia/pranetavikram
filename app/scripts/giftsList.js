@@ -26,15 +26,15 @@ export default {
     {
       id: 2,
       imgUrl:
-        'https://rukminim1.flixcart.com/image/704/704/jcjejrk0/sunglass/4/t/m/0oo918891887659-59-oakley-original-imaffn5uttqytghc.jpeg?q=70',
+        'https://rukminim1.flixcart.com/image/832/832/jdj4k280/sunglass/b/m/y/38-0oo9208-oakley-original-imaf2ffnp53x7fwb.jpeg?q=70',
       name: 'Oakley Sports Sunglasses - For him',
       msgName: 'Oakley Sunglasses',
       pdUrl:
-        'https://www.flipkart.com/oakley-sports-sunglasses/p/itmf3yh9xcqapddc',
-      isTaken: false,
-      takenBy: 'Mausa and Mausi',
-      price: '~ 8,711 &#x20b9;',
-      value: 8711
+        'https://www.flipkart.com/oakley-sports-rectangular-sunglasses/p/itmf3ykgj3xfhzuv',
+      isTaken: true,
+      takenBy: 'Kishu Chachu and Meeta Chachi',
+      price: '~ 8,352 &#x20b9;',
+      value: 8352
     },
     {
       id: 3,
