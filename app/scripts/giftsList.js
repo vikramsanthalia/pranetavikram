@@ -96,8 +96,8 @@ export default {
       msgName: 'Carpet',
       pdUrl:
         'https://www.pepperfry.com/presto-multicolour-polyester-tufted-hand-knotted-floral-carpet-1615047.html',
-      isTaken: false,
-      takenBy: 'Mausa and Mausi',
+      isTaken: true,
+      takenBy: 'Mayank bhaiya',
       price: '~ 2,729 &#x20b9;',
       value: 2729
     },
