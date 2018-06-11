@@ -173,8 +173,8 @@ export default {
       msgName: 'Key Holder Stand',
       pdUrl:
         'https://www.pepperfry.com/10-x-3-x-14-inch-white-wooden-key-holder-stand-by-artisans-rose-1631023.html',
-      isTaken: false,
-      takenBy: 'Mausa and Mausi',
+      isTaken: true,
+      takenBy: 'Kanika',
       price: '~ 1,537 &#x20b9;',
       value: 1537
     },
